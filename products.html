@@ -8,6 +8,11 @@
    <meta name="description" content="This is a meta description sample. We can add up to 160 characters.">
    <link rel="canonical" href="http://example.com/" />
    <meta name=" robots" content=" index, follow">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet">
+   <link rel="stylesheet" href="plugins/fontawesome/css/all.min.css">
    <link rel="stylesheet" href="css/style.css">
    <link rel="stylesheet" href="css/product.css">
 </head>
@@ -15,8 +20,8 @@
 <body>
    <!-- *HERO* -->
    <section class="hero">
-      <div class="container">
-         <div class="hero__info">
+      <div class="hero__info">
+         <div class="container">
             <small class="hero__label">Welcome to</small>
             <h1 class="hero__title">Sai Marketing</h1>
             <div class="hero__rating">
@@ -33,18 +38,22 @@
                <span class="hero__tags_item">HORECA Distributor</span>
             </div>
          </div>
-         <div class="hero__contact">
+      </div>
+      <div class="hero__contact">
+         <div class="container">
             <a href="javascript:void(0)" class="hero__contact_link"><i
-                  class="fal "></i><span>sairam.sr389@gmail.com</span></a>
-            <a href="javascript:void(0)" class="hero__contact_link"><i class="fal "></i><span>+91 9324206327</span></a>
-            <a href="javascript:void(0)" class="hero__contact_link"><i class="fal "></i><span>Mazgaon, Mumbai</span></a>
+                  class="fal fa-envelope"></i><span>sairam.sr389@gmail.com</span></a>
+            <a href="javascript:void(0)" class="hero__contact_link"><i class="fal fa-phone"></i><span>+91
+                  9324206327</span></a>
+            <a href="javascript:void(0)" class="hero__contact_link"><i class="fal fa-map-marker-alt"></i><span>Mazgaon,
+                  Mumbai</span></a>
          </div>
       </div>
    </section>
    <!-- *HEADER* -->
    <header class="header">
       <div class="container">
-         <a href="javascript:void(0)" class="header__brand-logo">SM</a>
+         <a href="javascript:void(0)" class="header__brand">SM</a>
          <nav class="header__nav">
             <a href="javascript:void(0)" class="header__nav_link">About</a>
             <a href="javascript:void(0)" class="header__nav_link header__nav_link--active">Product</a>
@@ -131,66 +140,76 @@
    </section>
    <!-- *RESELLER* -->
    <section class="reseller">
-      <h1 class="heading">Wholesale, Retail & Distributor</h1>
-      <p class="paragraph">
-         We help companies innovate faster and build better product, using real user data and rapid iterations. We
-         help
-         companies innovate faster and build better product, using real user data and rapid iterations.
-      </p>
-      <div class="reseller__list">
-         <span class="reseller__list_item"><img src="" alt=""></span>
-         <span class="reseller__list_item"><img src="" alt=""></span>
-         <span class="reseller__list_item"><img src="" alt=""></span>
-         <span class="reseller__list_item"><img src="" alt=""></span>
-         <span class="reseller__list_item"><img src="" alt=""></span>
-         <span class="reseller__list_item"><img src="" alt=""></span>
-         <span class="reseller__list_item"><img src="" alt=""></span>
-         <span class="reseller__list_item"><img src="" alt=""></span>
-         <span class="reseller__list_item"><img src="" alt=""></span>
-         <span class="reseller__list_item"><img src="" alt=""></span>
-         <span class="reseller__list_item"><img src="" alt=""></span>
-         <span class="reseller__list_item"><img src="" alt=""></span>
-         <span class="reseller__list_item"><img src="" alt=""></span>
-         <span class="reseller__list_item"><img src="" alt=""></span>
-         <span class="reseller__list_item"><img src="" alt=""></span>
+      <div class="container">
+         <h1 class="heading">Wholesale, Retail & Distributor</h1>
+         <p class="paragraph">
+            We help companies innovate faster and build better product, using real user data and rapid iterations. We
+            help
+            companies innovate faster and build better product, using real user data and rapid iterations.
+         </p>
+         <div class="reseller__list">
+            <span class="reseller__list_item"><img src="" alt=""></span>
+            <span class="reseller__list_item"><img src="" alt=""></span>
+            <span class="reseller__list_item"><img src="" alt=""></span>
+            <span class="reseller__list_item"><img src="" alt=""></span>
+            <span class="reseller__list_item"><img src="" alt=""></span>
+            <span class="reseller__list_item"><img src="" alt=""></span>
+            <span class="reseller__list_item"><img src="" alt=""></span>
+            <span class="reseller__list_item"><img src="" alt=""></span>
+            <span class="reseller__list_item"><img src="" alt=""></span>
+            <span class="reseller__list_item"><img src="" alt=""></span>
+            <span class="reseller__list_item"><img src="" alt=""></span>
+            <span class="reseller__list_item"><img src="" alt=""></span>
+            <span class="reseller__list_item"><img src="" alt=""></span>
+            <span class="reseller__list_item"><img src="" alt=""></span>
+            <span class="reseller__list_item"><img src="" alt=""></span>
+         </div>
       </div>
    </section>
    <!-- *FOOTER* -->
    <footer class="footer">
       <div class="container">
-         <div class="footer__about">
-            <h3 class="footer__head">About Sai Marketing</h3>
-            <p class="footer__para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, earum
-               similique quasi vel
-               molestiae
-               veniam facere enim explicabo mollitia perspiciatis, laboriosam dolore. Eaque sed eveniet, soluta
-               asperiores
-               quidem adipisci vero.</p>
-         </div>
-         <div class="footer__address">
-            <h3 class="footer__head">Address</h3>
-            <address class="footer__address">
-               <p class="footer__para">Plot No. 71, Manohar Building, H. K. Marg, Mazgaon, (Near Hamja Tower)
+         <div class="display-grid three-column">
+            <div class="footer__about">
+               <h3 class="footer__head">About Sai Marketing</h3>
+               <p class="footer__para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, earum
+                  similique quasi vel
+                  molestiae
+                  veniam facere enim explicabo mollitia perspiciatis, laboriosam dolore. Eaque sed eveniet, soluta
+                  asperiores
+                  quidem adipisci vero.</p>
+            </div>
+            <div class="footer__address">
+               <h3 class="footer__head">Address</h3>
+               <p class="footer__para">Plot No. 71, Manohar Building,<br> H. K. Marg, Mazgaon, (Near Hamja Tower)<br>
                   Mumbai - 400010</p>
                <p class="footer__para">GSTIN - 27ALGPD5253P1ZR</P>
-            </address>
-            <div class="footer__social">
-               <i class="fab "></i>
-               <i class="fab "></i>
-               <i class="fab "></i>
-               <i class="fab "></i>
+               <div class="footer__social">
+                  <a href="javascript:void(0)" class="footer__social_link">
+                     <i class="fab fa-facebook-square"></i>
+                  </a>
+                  <a href="javascript:void(0)" class="footer__social_link">
+                     <i class="fab fa-twitter-square"></i>
+                  </a>
+                  <a href="javascript:void(0)" class="footer__social_link">
+                     <i class="fab fa-linkedin"></i>
+                  </a>
+                  <a href="javascript:void(0)" class="footer__social_link">
+                     <i class="fab fa-whatsapp-square"></i>
+                  </a>
+               </div>
             </div>
-         </div>
-         <div class="footer__biz-hrs">
-            <h3 class="footer__head">Business Hrs</h3>
-            <p class="footer__para">
-               Monday - Saturday
-               <small>(09:00 am - 07:00 pm)</small>
-            </p>
-            <p class="footer__para">
-               Sunday
-               <small>Closed</small>
-            </p>
+            <div class="footer__bizhrs">
+               <h3 class="footer__head">Business Hrs</h3>
+               <p class="footer__para">
+                  Monday - Saturday
+                  <small>(09:00 am - 07:00 pm)</small>
+               </p>
+               <p class="footer__para">
+                  Sunday
+                  <small>Closed</small>
+               </p>
+            </div>
          </div>
          <div class="footer__copy">
             Copyright © 2023. Sai Marketing. All rights reserved.
