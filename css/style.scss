@@ -43,6 +43,12 @@ img {
     height: auto;
 }
 
+button,
+input,
+textarea {
+    font-family: 'Poppins', sans-serif;
+}
+
 html {
     font-size: 62.5%;
 }
@@ -54,12 +60,110 @@ body {
 }
 
 // COMMON
-
 .container {
+    --bs-gutter-x: 2.4rem;
+    padding-right: calc(var(--bs-gutter-x) * 0.5);
+    padding-left: calc(var(--bs-gutter-x) * 0.5);
+    width: 100%;
     max-width: 1170px;
-    margin-left: auto;
     margin-right: auto;
+    margin-left: auto;
+
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: calc(-0.5 * var(--bs-gutter-x));
+        margin-left: calc(-0.5 * var(--bs-gutter-x));
+
+        &.no-gutters {
+            margin-right: 0;
+            margin-left: 0;
+        }
+
+        &.no-gutters > .col,
+        &.no-gutters > [class*='col-'] {
+            padding-right: 0;
+            padding-left: 0;
+        }
+
+        > [class*='col-'] {
+            padding-right: calc(var(--bs-gutter-x) * 0.5);
+            padding-left: calc(var(--bs-gutter-x) * 0.5);
+        }
+
+        .col {
+            flex: 1 0 0;
+            max-width: 100%;
+        }
+
+        .col-auto {
+            flex: 0 0 auto;
+            width: auto;
+            max-width: 100%;
+        }
+
+        .col-1 {
+            flex: 0 0 8.333333%;
+            max-width: 8.333333%;
+        }
+
+        .col-2 {
+            flex: 0 0 16.666667%;
+            max-width: 16.666667%;
+        }
+
+        .col-3 {
+            flex: 0 0 25%;
+            max-width: 25%;
+        }
+
+        .col-4 {
+            flex: 0 0 33.333333%;
+            max-width: 33.333333%;
+        }
+
+        .col-5 {
+            flex: 0 0 41.666667%;
+            max-width: 41.666667%;
+        }
+
+        .col-6 {
+            flex: 0 0 50%;
+            max-width: 50%;
+        }
+
+        .col-7 {
+            flex: 0 0 58.333333%;
+            max-width: 58.333333%;
+        }
+
+        .col-8 {
+            flex: 0 0 66.666667%;
+            max-width: 66.666667%;
+        }
+
+        .col-9 {
+            flex: 0 0 75%;
+            max-width: 75%;
+        }
+
+        .col-10 {
+            flex: 0 0 83.333333%;
+            max-width: 83.333333%;
+        }
+
+        .col-11 {
+            flex: 0 0 91.666667%;
+            max-width: 91.666667%;
+        }
+
+        .col-12 {
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+    }
 }
+
 .heading {
     position: relative;
     font-size: 4rem;
@@ -82,6 +186,7 @@ body {
         background: var(--primary-dark);
     }
 }
+
 .paragraph {
     font-size: 1.6rem;
     line-height: 1.5;
@@ -183,7 +288,6 @@ body {
 }
 
 //HEADER
-
 .header {
     padding: 2rem 0;
     background: #fff;
@@ -244,19 +348,9 @@ body {
 }
 
 //FOOTER
-
 .footer {
     background: var(--secondary-dark);
     padding: 5rem 0;
-
-    .display-grid {
-        display: grid;
-
-        &.three-column {
-            grid-template-columns: repeat(3, minmax(25rem, max-content));
-            gap: 0 4rem;
-        }
-    }
 
     .footer__head {
         color: #fff;
@@ -314,13 +408,41 @@ body {
 }
 
 //ABOUT
+.about {
+    padding: 8rem 0;
+    .about__profile {
+        text-align: center;
+        margin-top: 6rem;
+
+        .about__pic {
+            max-width: 260px;
+            max-height: 260px;
+            border-radius: 50%;
+        }
+
+        .about__name {
+            margin-top: 2rem;
+            font-size: 3.2rem;
+            font-weight: 600;
+            color: var(--primary-dark);
+        }
+
+        .about__designation {
+            margin-top: 0.5rem;
+            margin-bottom: 2rem;
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: var(--secondary-dark);
+        }
+    }
+}
 
 //PRODUCT
-
 .product {
     padding: 8rem 0;
 }
 
+//RESELLER
 .reseller {
     padding: 8rem 0;
 
@@ -346,3 +468,99 @@ body {
 }
 
 //CONTACT
+.contact {
+    padding: 8rem 0;
+
+    .contact__form {
+        margin-top: 6rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 4rem 3rem;
+        grid-template-areas:
+            'a-name a-email'
+            'a-mobile a-subject'
+            'a-message a-message'
+            'a-send a-send';
+
+        .area-name {
+            grid-area: a-name;
+        }
+        .area-email {
+            grid-area: a-email;
+        }
+        .area-mobile {
+            grid-area: a-mobile;
+        }
+        .area-subject {
+            grid-area: a-subject;
+        }
+        .area-message {
+            grid-area: a-message;
+        }
+        .area-send {
+            grid-area: a-send;
+        }
+
+        .form_group {
+            position: relative;
+            .form_label {
+                display: inline-flex;
+                font-size: 1.4rem;
+                position: absolute;
+                top: -1.2rem;
+                left: 1rem;
+                padding: 0.2rem 1rem;
+                background: #fff;
+                color: var(--secondary-light);
+            }
+            .form_control {
+                width: 100%;
+                padding: 0.9rem 1.2rem;
+                height: 100%;
+                min-height: 5rem;
+                border: 2px solid #666a92;
+                border-radius: 4px;
+                outline: 0;
+                transition: 300ms border;
+                font-size: 1.6rem;
+                color: var(--secondary-dark);
+
+                &:focus {
+                    border: 2px solid var(--primary-dark);
+                }
+            }
+        }
+
+        .btn_send_message {
+            padding: 1.2rem;
+            min-height: 6rem;
+            font-size: 1.8rem;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            max-width: 450px;
+            margin-left: auto;
+            margin-right: auto;
+            color: #fff;
+            background: var(--primary-dark);
+            outline: 0;
+            border-radius: 4px;
+            border: 0;
+            cursor: pointer;
+            i {
+                font-size: 20px;
+                margin-right: 1.4rem;
+            }
+        }
+    }
+}
+
+.map {
+    line-height: 0;
+    iframe {
+        margin: 0;
+        padding: 0;
+    }
+}
