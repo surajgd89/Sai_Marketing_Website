@@ -61,107 +61,9 @@ body {
 
 // COMMON
 .container {
-    --bs-gutter-x: 2.4rem;
-    padding-right: calc(var(--bs-gutter-x) * 0.5);
-    padding-left: calc(var(--bs-gutter-x) * 0.5);
-    width: 100%;
     max-width: 1170px;
     margin-right: auto;
     margin-left: auto;
-
-    .row {
-        display: flex;
-        flex-wrap: wrap;
-        margin-right: calc(-0.5 * var(--bs-gutter-x));
-        margin-left: calc(-0.5 * var(--bs-gutter-x));
-
-        &.no-gutters {
-            margin-right: 0;
-            margin-left: 0;
-        }
-
-        &.no-gutters > .col,
-        &.no-gutters > [class*='col-'] {
-            padding-right: 0;
-            padding-left: 0;
-        }
-
-        > [class*='col-'] {
-            padding-right: calc(var(--bs-gutter-x) * 0.5);
-            padding-left: calc(var(--bs-gutter-x) * 0.5);
-        }
-
-        .col {
-            flex: 1 0 0;
-            max-width: 100%;
-        }
-
-        .col-auto {
-            flex: 0 0 auto;
-            width: auto;
-            max-width: 100%;
-        }
-
-        .col-1 {
-            flex: 0 0 8.333333%;
-            max-width: 8.333333%;
-        }
-
-        .col-2 {
-            flex: 0 0 16.666667%;
-            max-width: 16.666667%;
-        }
-
-        .col-3 {
-            flex: 0 0 25%;
-            max-width: 25%;
-        }
-
-        .col-4 {
-            flex: 0 0 33.333333%;
-            max-width: 33.333333%;
-        }
-
-        .col-5 {
-            flex: 0 0 41.666667%;
-            max-width: 41.666667%;
-        }
-
-        .col-6 {
-            flex: 0 0 50%;
-            max-width: 50%;
-        }
-
-        .col-7 {
-            flex: 0 0 58.333333%;
-            max-width: 58.333333%;
-        }
-
-        .col-8 {
-            flex: 0 0 66.666667%;
-            max-width: 66.666667%;
-        }
-
-        .col-9 {
-            flex: 0 0 75%;
-            max-width: 75%;
-        }
-
-        .col-10 {
-            flex: 0 0 83.333333%;
-            max-width: 83.333333%;
-        }
-
-        .col-11 {
-            flex: 0 0 91.666667%;
-            max-width: 91.666667%;
-        }
-
-        .col-12 {
-            flex: 0 0 100%;
-            max-width: 100%;
-        }
-    }
 }
 
 .heading {
@@ -351,6 +253,28 @@ body {
 .footer {
     background: var(--secondary-dark);
     padding: 5rem 0;
+
+    .footer__area {
+        display: grid;
+        grid-template-columns: repeat(3, 40% 30% 30%);
+        gap: 3rem;
+        grid-template-areas:
+            'a-about a-address a-bizhrs'
+            'a-copy a-copy a-copy';
+
+        .area-about {
+            grid-area: a-about;
+        }
+        .area-address {
+            grid-area: a-address;
+        }
+        .area-bizhrs {
+            grid-area: a-bizhrs;
+        }
+        .area-copy {
+            grid-area: a-copy;
+        }
+    }
 
     .footer__head {
         color: #fff;
