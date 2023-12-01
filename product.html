@@ -63,10 +63,11 @@
             <small>SM</small>
             <span>Sai Marketing</span>
          </a>
+         <span class="header__toggle"><i class="fa-regular fa-bars"></i></span>
          <nav class="header__nav">
             <a href="index.html" class="header__nav_link">About</a>
             <a href="product.html" class="header__nav_link header__nav_link--active">Product</a>
-            <a href="contact.html" class="header__nav_link">Contact</a>
+            <a href="contact.html" class="header__nav_link ">Contact</a>
          </nav>
       </div>
    </header>
@@ -98,16 +99,112 @@
                <option value="amul">Amul</option>
                <option value="goeld">Goeld</option>
             </select>
-            <div class="custom_Switch">
-               <div class="button">
-                  <input type="checkbox" class="checkbox" />
-                  <div class="knobs"></div>
-                  <div class="layer"></div>
-               </div>
+            <div class="custom_Filter">
+               <span class="custom_Filter__btn custom_Filter__btn--active"><i class="fa-regular fa-check"></i>
+                  All</span>
+               <span class="custom_Filter__btn"><i class="fa-regular fa-check"></i>
+                  Veg</span>
+               <span class="custom_Filter__btn"><i class="fa-regular fa-check"></i>
+                  Non-Veg</span>
+               <span class="custom_Filter__btn"><i class="fa-regular fa-check"></i>
+                  Best
+                  Seller</span>
             </div>
          </div>
          <div class="product__list">
-            <div class="product__item best_Seller">
+            <div class="product__item product__veg">
+               <a href="#" class="product__details"><i class="fa-regular fa-arrow-up-right-from-square"></i></a>
+               <div class="product__img">
+                  <img src="images/Crab-Claw-Amritsari.png" alt="">
+               </div>
+               <div class="product__title">Crab Claws Amritsari</div>
+               <div class="product__price">
+                  <i class="fa-solid fa-indian-rupee-sign"></i><span>250.00</span>
+               </div>
+               <div class="product__size">
+                  <div class="product__size_item product__size_item--active">
+                     <span>1kg</span>
+                     <small>(16pcs)</small>
+                  </div>
+                  <div class="product__size_item">
+                     <span>750gm</span>
+                     <small>(16pcs)</small>
+                  </div>
+                  <div class="product__size_item">
+                     <span>500gm</span>
+                     <small>(16pcs)</small>
+                  </div>
+                  <div class="product__size_item">
+                     <span>250gm</span>
+                     <small>(16pcs)</small>
+                  </div>
+                  <div class="product__size_item">
+                     <span>125gm</span>
+                     <small>(16pcs)</small>
+                  </div>
+               </div>
+               <div class="product__method">
+                  <div class="product__method_item">
+                     <i class="fa-light fa-pan-frying"></i>
+                     <span>Shallow Fry</span>
+                  </div>
+                  <div class="product__method_item">
+                     <i class="fa-light fa-grill-hot"></i>
+                     <span>Deep Fry</span>
+                  </div>
+                  <div class="product__method_item product__method_item--off">
+                     <i class="fa-light fa-microwave"></i>
+                     <span>Air Fry</span>
+                  </div>
+               </div>
+            </div>
+            <div class="product__item product__non_veg">
+               <a href="#" class="product__details"><i class="fa-regular fa-arrow-up-right-from-square"></i></a>
+               <div class="product__img">
+                  <img src="images/Crab-Claw-Amritsari.png" alt="">
+               </div>
+               <div class="product__title">Crab Claws Amritsari</div>
+               <div class="product__price">
+                  <i class="fa-solid fa-indian-rupee-sign"></i><span>250.00</span>
+               </div>
+               <div class="product__size">
+                  <div class="product__size_item product__size_item--active">
+                     <span>1kg</span>
+                     <small>(16pcs)</small>
+                  </div>
+                  <div class="product__size_item">
+                     <span>750gm</span>
+                     <small>(16pcs)</small>
+                  </div>
+                  <div class="product__size_item">
+                     <span>500gm</span>
+                     <small>(16pcs)</small>
+                  </div>
+                  <div class="product__size_item">
+                     <span>250gm</span>
+                     <small>(16pcs)</small>
+                  </div>
+                  <div class="product__size_item product__size_item--off">
+                     <span>125gm</span>
+                     <small>(16pcs)</small>
+                  </div>
+               </div>
+               <div class="product__method">
+                  <div class="product__method_item">
+                     <i class="fa-light fa-pan-frying"></i>
+                     <span>Shallow Fry</span>
+                  </div>
+                  <div class="product__method_item">
+                     <i class="fa-light fa-grill-hot"></i>
+                     <span>Deep Fry</span>
+                  </div>
+                  <div class="product__method_item product__method_item--off">
+                     <i class="fa-light fa-microwave"></i>
+                     <span>Air Fry</span>
+                  </div>
+               </div>
+            </div>
+            <div class="product__item product__best_seller">
                <a href="#" class="product__details"><i class="fa-regular fa-arrow-up-right-from-square"></i></a>
                <div class="product__img">
                   <img src="images/Crab-Claw-Amritsari.png" alt="">
@@ -152,10 +249,51 @@
                      <span>Air Fry</span>
                   </div>
                </div>
-               <div class="product__patch"></div>
             </div>
-            <div class="product__item best_Seller">
+            <div class="product__item">
                <a href="#" class="product__details"><i class="fa-regular fa-arrow-up-right-from-square"></i></a>
+               <div class="product__img">
+                  <img src="images/Crab-Claw-Amritsari.png" alt="">
+               </div>
+               <div class="product__title">Crab Claws Amritsari</div>
+               <div class="product__price">
+                  <i class="fa-solid fa-indian-rupee-sign"></i><span>250.00</span>
+               </div>
+               <div class="product__size">
+                  <div class="product__size_item product__size_item--active">
+                     <span>250gm</span>
+                     <small>(16pcs)</small>
+                  </div>
+                  <div class="product__size_item">
+                     <span>250gm</span>
+                     <small>(16pcs)</small>
+                  </div>
+                  <div class="product__size_item">
+                     <span>250gm</span>
+                     <small>(16pcs)</small>
+                  </div>
+                  <div class="product__size_item">
+                     <span>250gm</span>
+                     <small>(16pcs)</small>
+                  </div>
+               </div>
+               <div class="product__method">
+                  <div class="product__method_item">
+                     <i class="fa-light fa-pan-frying"></i>
+                     <span>Shallow Fry</span>
+                  </div>
+                  <div class="product__method_item">
+                     <i class="fa-light fa-grill-hot"></i>
+                     <span>Deep Fry</span>
+                  </div>
+                  <div class="product__method_item product__method_item--off">
+                     <i class="fa-light fa-microwave"></i>
+                     <span>Air Fry</span>
+                  </div>
+               </div>
+            </div>
+            <div class="product__item product__veg">
+               <a href=" #" class="product__details"><i class="fa-regular fa-arrow-up-right-from-square"></i></a>
                <div class="product__img">
                   <img src="images/Crab-Claw-Amritsari.png" alt="">
                </div>
@@ -199,10 +337,9 @@
                      <span>Air Fry</span>
                   </div>
                </div>
-               <div class="product__patch"></div>
             </div>
-            <div class="product__item best_Seller">
-               <a href="#" class="product__details"><i class="fa-regular fa-arrow-up-right-from-square"></i></a>
+            <div class="product__item product__best_seller">
+               <a href=" #" class="product__details"><i class="fa-regular fa-arrow-up-right-from-square"></i></a>
                <div class="product__img">
                   <img src="images/Crab-Claw-Amritsari.png" alt="">
                </div>
@@ -246,144 +383,6 @@
                      <span>Air Fry</span>
                   </div>
                </div>
-               <div class="product__patch"></div>
-            </div>
-            <div class="product__item best_Seller">
-               <a href="#" class="product__details"><i class="fa-regular fa-arrow-up-right-from-square"></i></a>
-               <div class="product__img">
-                  <img src="images/Crab-Claw-Amritsari.png" alt="">
-               </div>
-               <div class="product__title">Crab Claws Amritsari</div>
-               <div class="product__price">
-                  <i class="fa-solid fa-indian-rupee-sign"></i><span>250.00</span>
-               </div>
-               <div class="product__size">
-                  <div class="product__size_item product__size_item--active">
-                     <span>250gm</span>
-                     <small>(16pcs)</small>
-                  </div>
-                  <div class="product__size_item">
-                     <span>250gm</span>
-                     <small>(16pcs)</small>
-                  </div>
-                  <div class="product__size_item">
-                     <span>250gm</span>
-                     <small>(16pcs)</small>
-                  </div>
-                  <div class="product__size_item">
-                     <span>250gm</span>
-                     <small>(16pcs)</small>
-                  </div>
-               </div>
-               <div class="product__method">
-                  <div class="product__method_item">
-                     <i class="fa-light fa-pan-frying"></i>
-                     <span>Shallow Fry</span>
-                  </div>
-                  <div class="product__method_item">
-                     <i class="fa-light fa-grill-hot"></i>
-                     <span>Deep Fry</span>
-                  </div>
-                  <div class="product__method_item product__method_item--off">
-                     <i class="fa-light fa-microwave"></i>
-                     <span>Air Fry</span>
-                  </div>
-               </div>
-               <div class="product__patch"></div>
-            </div>
-            <div class="product__item best_Seller">
-               <a href="#" class="product__details"><i class="fa-regular fa-arrow-up-right-from-square"></i></a>
-               <div class="product__img">
-                  <img src="images/Crab-Claw-Amritsari.png" alt="">
-               </div>
-               <div class="product__title">Crab Claws Amritsari</div>
-               <div class="product__price">
-                  <i class="fa-solid fa-indian-rupee-sign"></i><span>250.00</span>
-               </div>
-               <div class="product__size">
-                  <div class="product__size_item product__size_item--active">
-                     <span>250gm</span>
-                     <small>(16pcs)</small>
-                  </div>
-                  <div class="product__size_item">
-                     <span>250gm</span>
-                     <small>(16pcs)</small>
-                  </div>
-                  <div class="product__size_item">
-                     <span>250gm</span>
-                     <small>(16pcs)</small>
-                  </div>
-                  <div class="product__size_item">
-                     <span>250gm</span>
-                     <small>(16pcs)</small>
-                  </div>
-                  <div class="product__size_item product__size_item--off">
-                     <span>250gm</span>
-                     <small>(16pcs)</small>
-                  </div>
-               </div>
-               <div class="product__method">
-                  <div class="product__method_item">
-                     <i class="fa-light fa-pan-frying"></i>
-                     <span>Shallow Fry</span>
-                  </div>
-                  <div class="product__method_item">
-                     <i class="fa-light fa-grill-hot"></i>
-                     <span>Deep Fry</span>
-                  </div>
-                  <div class="product__method_item product__method_item--off">
-                     <i class="fa-light fa-microwave"></i>
-                     <span>Air Fry</span>
-                  </div>
-               </div>
-               <div class="product__patch"></div>
-            </div>
-            <div class="product__item best_Seller">
-               <a href="#" class="product__details"><i class="fa-regular fa-arrow-up-right-from-square"></i></a>
-               <div class="product__img">
-                  <img src="images/Crab-Claw-Amritsari.png" alt="">
-               </div>
-               <div class="product__title">Crab Claws Amritsari</div>
-               <div class="product__price">
-                  <i class="fa-solid fa-indian-rupee-sign"></i><span>250.00</span>
-               </div>
-               <div class="product__size">
-                  <div class="product__size_item product__size_item--active">
-                     <span>250gm</span>
-                     <small>(16pcs)</small>
-                  </div>
-                  <div class="product__size_item">
-                     <span>250gm</span>
-                     <small>(16pcs)</small>
-                  </div>
-                  <div class="product__size_item">
-                     <span>250gm</span>
-                     <small>(16pcs)</small>
-                  </div>
-                  <div class="product__size_item">
-                     <span>250gm</span>
-                     <small>(16pcs)</small>
-                  </div>
-                  <div class="product__size_item product__size_item--off">
-                     <span>250gm</span>
-                     <small>(16pcs)</small>
-                  </div>
-               </div>
-               <div class="product__method">
-                  <div class="product__method_item">
-                     <i class="fa-light fa-pan-frying"></i>
-                     <span>Shallow Fry</span>
-                  </div>
-                  <div class="product__method_item">
-                     <i class="fa-light fa-grill-hot"></i>
-                     <span>Deep Fry</span>
-                  </div>
-                  <div class="product__method_item product__method_item--off">
-                     <i class="fa-light fa-microwave"></i>
-                     <span>Air Fry</span>
-                  </div>
-               </div>
-               <div class="product__patch"></div>
             </div>
          </div>
       </div>
@@ -420,7 +419,7 @@
    <footer class="footer">
       <div class="container">
          <div class="footer__area">
-            <div class="footer__about area-about">
+            <div class="footer__about ">
                <h3 class="footer__head">About Sai Marketing</h3>
                <p class="footer__para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, earum
                   similique quasi vel
@@ -429,7 +428,7 @@
                   asperiores
                   quidem adipisci vero.</p>
             </div>
-            <div class="footer__address area-address">
+            <div class="footer__address ">
                <h3 class="footer__head">Address</h3>
                <p class="footer__para">Plot No. 71, Manohar Building,<br> H. K. Marg, Mazgaon, (Near Hamja Tower)<br>
                   Mumbai - 400010</p>
@@ -449,7 +448,7 @@
                   </a>
                </div>
             </div>
-            <div class="footer__bizhrs area-bizhrs">
+            <div class="footer__bizhrs ">
                <h3 class="footer__head">Business Hrs</h3>
                <p class="footer__para">
                   Monday - Saturday
@@ -460,12 +459,13 @@
                   <small>Closed</small>
                </p>
             </div>
-            <div class="footer__copy area-copy">
-               Copyright © 2023. Sai Marketing. All rights reserved.
-            </div>
+         </div>
+         <div class="footer__copy ">
+            Copyright © 2023. Sai Marketing. All rights reserved.
          </div>
       </div>
    </footer>
+   <script src="js/main.js"></script>
 </body>
 
 </html>
