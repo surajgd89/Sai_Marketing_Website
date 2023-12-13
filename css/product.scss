@@ -242,14 +242,8 @@
                 }
             }
 
-            .product__patch {
-                display: none;
-                background-color: #eceeff;
-                height: 11rem;
-                position: absolute;
-                bottom: 0;
-                width: 100%;
-                z-index: -1;
+            &.product__method_item--off {
+                opacity: 0.2;
             }
         }
     }
